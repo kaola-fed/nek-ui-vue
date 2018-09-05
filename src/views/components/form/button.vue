@@ -204,7 +204,7 @@
 </template>
 <script>
 
-import Code from '../../code/button';
+import Code from '@/code/button';
 export default {
     name: 'kL-button',
     data() {

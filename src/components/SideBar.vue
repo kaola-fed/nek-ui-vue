@@ -14,6 +14,7 @@
                 </li>
                 <li v-for="item in menuItem.componentItem">
                     <div :class="$style['kl-menu-list__title-zh']">
+                        <!-- <i class="kl-icon--arrow-down" /> -->
                         <span :class="$style['kl-u-icon', 'kl-u-icon-angle-down']"></span>
                         {{item.title}}
                     </div>
