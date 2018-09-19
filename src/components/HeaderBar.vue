@@ -1,17 +1,17 @@
 <template>
-    <header :class="$style['kl-header']">
-        <div :class="$style['kl-header__left']" @click="handleClickHome()">
-            <img :class="$style['kl-header__logo']" :src="imgs.logo" v-if="!isIndex">
-            <span :class="$style['kl-header__name']" >nek-vue</span>
+    <header class="kl-header">
+        <div class="kl-header__left" @click="handleClickHome()">
+            <img class="kl-header__logo" :src="imgs.logo" v-if="!isIndex">
+            <span class="kl-header__name" >nek-vue</span>
         </div>
-        <div :class="$style['kl-header__right']">
-            <ul :class="$style['kl-header__nav']">
-                <li><router-link :to="{ name: 'docs'}">首页</router-link></li>
-                <li><router-link :to="{ name: 'docs'}">组件</router-link></li>
-                <li><router-link :to="{ name: 'docs'}">工具</router-link></li>
+        <div class="kl-header__right">
+            <ul class="kl-header__nav">
+                <li><a href="https://element.faas.ele.me/2.4/#/zh-CN">demo页面</a></li>
+                <li><a href="https://element.faas.ele.me/2.4/#/zh-CN">element组件</a></li>
+                <!-- <li><router-link :to="{ name: 'docs'}">工具</router-link></li>
                 <li >
                     <a >资源</a><span ></span>
-                    <ul :class="$style['kl-nav-dropdown']">
+                    <ul class="kl-nav-dropdown">
                         <li><router-link :to="{ name: 'docs'}">Snippets</router-link></li>
                         <li><router-link :to="{ name: 'docs'}">NEK</router-link></li>
                         <li><router-link :to="{ name: 'docs'}">RegularJS</router-link></li>
@@ -19,11 +19,11 @@
                     </ul>
                 </li>
                 <li>
-                    <span :class="$style['kl-header__lang']" @click="handleChangeLang">
+                    <span class="kl-header__lang" @click="handleChangeLang">
                         <template v-if="lang === 'zh-CN'">EN</template>
                         <template v-else>中文</template>
                     </span>
-                </li>
+                </li> -->
             </ul>
         </div>
     </header>
@@ -61,7 +61,7 @@ export default {
 };
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style module>
+<style scoped>
 @component-namespace kl {
     @b header {
         position: fixed;

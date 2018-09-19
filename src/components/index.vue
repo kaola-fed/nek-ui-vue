@@ -2,33 +2,33 @@
     <div>
         <div class="index">
             <header-bar :isIndex="true"></header-bar>
-            <div :class="$style['kl-index-hero']">
-                <div :class="$style['kl-index-hero__inner']">
-                    <div :class="$style['kl-index-hero__left']">
-                        <img :class="$style['kl-index-hero__logo']" :src="imgs.logo">
+            <div class="kl-index-hero">
+                <div class="kl-index-hero__inner">
+                    <div class="kl-index-hero__left">
+                        <img class="kl-index-hero__logo" :src="imgs.logo">
                     </div>
-                    <div :class="$style['kl-index-hero__right']">
+                    <div class="kl-index-hero__right">
                         <h1>
-                            NEK VUE<br>后台 UI 组件库
+                            element-ui <br/>的样式包
                         </h1>
                         <p>
-                            <router-link :class="$style['kl-index-hero__button']" :to="{ name: 'docs'}">快速开始</router-link>
-                            <a :class="$style['kl-index-hero__button']" href="https://github.com/kaola-fed/nek-ui" target="_blank">GITHUB</a>
+                            <router-link class="kl-index-hero__button" :to="{ name: 'docs'}">快速开始</router-link>
+                            <a class="kl-index-hero__button" href="https://github.com/kaola-fed/element-style" target="_blank">GITHUB</a>
                         </p>
                     </div>
                 </div>
             </div>
-            <div :class="$style['kl-highlights']">
-                <div :class="$style['kl-highlights__inner']">
-                    <div :class="$style['kl-highlights__point']">
+            <div class="kl-highlights">
+                <div class="kl-highlights__inner">
+                    <div class="kl-highlights__point">
                         <h2>丰富</h2>
                         <p>作为后台组件库，包括了各种场景的组件，避免无意义地造轮子。</p>
                     </div>
-                    <div :class="$style['kl-highlights__point']">
+                    <div class="kl-highlights__point">
                         <h2>规范</h2>
                         <p>统一了规范，规避了开发人员个人喜好带来的代码不统一问题。</p>
                     </div>    
-                    <div :class="$style['kl-highlights__point']">
+                    <div class="kl-highlights__point">
                         <h2>可定制</h2>
                         <p>主题色可以根据项目实际情况进行个性化定制。</p>
                     </div>
@@ -197,7 +197,7 @@ export default {
     }
 };
 </script>
-<style module>
+<style scoped>
 @component-namespace kl {
     @b index-hero {
         margin-top: 60px;

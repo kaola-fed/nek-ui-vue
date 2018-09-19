@@ -10,10 +10,10 @@
         <div class="kl-example__code">
             <div class="iconLine" @click="showCode = !showCode">
                 <div class="iconOuter" :class="{revert : showCode}"> 
-                    <i class="kl-icon kl-icon__angle-down "></i>
+                    <el-icon class="el-icon-arrow-down" />
                 </div>
             </div>
-            <div v-show="showCode" class="code_display">
+            <div v-show="showCode" :class="['code_style', {code_display : showCode}]">
                 <slot name="code"></slot>
             </div>
         </div>

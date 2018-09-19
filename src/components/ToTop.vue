@@ -1,7 +1,7 @@
 <template>
-    <div :class="$style['kl-to-top']" @click="changeTotop" v-if="show">
-        <div :class="$style['kl-to-top__inner']">
-            <i :class="$style['kl-to-top__icon']"></i>
+    <div class="kl-to-top" @click="changeTotop" v-if="show">
+        <div class="kl-to-top__inner">
+            <i class="kl-to-top__icon"></i>
         </div>
     </div>
 </template>
@@ -33,7 +33,7 @@ export default {
 };
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style module>
+<style scoped>
 @component-namespace kl {
     @b to-top {
         position: fixed;

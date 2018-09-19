@@ -1,26 +1,31 @@
 <template>
-    <div :class="$style['kl-sidebar']" >
-        <div :class="$style['kl-menu-list']">
-            <ul :class="$style['kl-menu-list__root']">
-                <li v-for="item in menuItem.itemTop" :class="$style['kl-menu-list__top']" >
-                    <div :class="$style['kl-menu-list__title-zh']">
-                        <a href=""  class="current">{{item.title}}</a>
+    <div class="kl-sidebar" >
+        <div class="kl-menu-list">
+            <ul class="kl-menu-list__root">
+                <li v-for="item in menuItem.itemTop" class="kl-menu-list__top" >
+                    <div class="kl-menu-list__title-zh">
+                        <!-- <a href=""  class="current">{{item.title}}</a> -->
+                        <router-link :to="{ name: `${item.titleEn}`}" class="kl-submenu__item current"> 
+                            {{item.title}}
+                        </router-link>
                     </div>
                 </li>
                 <li >
-                    <div :class="$style['kl-menu-list__title-zh']">
+                    <div class="kl-menu-list__title-zh">
                         组件
                     </div>
                 </li>
                 <li v-for="item in menuItem.componentItem">
-                    <div :class="$style['kl-menu-list__title-zh']">
+                    <div class="kl-menu-list__title-zh">
                         <!-- <i class="kl-icon--arrow-down" /> -->
-                        <span :class="$style['kl-u-icon', 'kl-u-icon-angle-down']"></span>
+                        <span class="kl-u-icon', 'kl-u-icon-angle-down"></span>
                         {{item.title}}
                     </div>
-                    <ul :class="$style['kl-submenu']">
+                    <ul class="kl-submenu">
                         <li v-for="subItem in item.children">
-                            <router-link :to="{ name: `${subItem.titleEn}`}" :class="$style['kl-submenu__item']"> {{subItem.title}} <span :class="$style['kl-menu-list__title-en']">{{subItem.titleEn}}</span></router-link>
+                            <router-link :to="{ name: `${subItem.titleEn}`}" class="kl-submenu__item"> 
+                                {{subItem.title}} <span class="kl-menu-list__title-en">{{subItem.titleEn}}</span>
+                            </router-link>
                         </li>
                     </ul>
                 </li>
@@ -45,7 +50,7 @@ export default {
 };
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style module>
+<style scoped>
 @component-namespace kl {
     @b sidebar {
         @media (max-width: 900px) { 
@@ -85,7 +90,7 @@ export default {
         @e title-en {
             color: #999;
             &:hover {
-                color: #e31436;
+                color: #00c4c0;
             }
         }
         ul {
@@ -110,11 +115,11 @@ export default {
                     background-color: transparent;
                 };*/
                 &:hover {
-                    color: #e31436;
+                    color: #00c4c0;
                     text-decoration: none;
                     display: inline-block;
                     /*&:before {
-                        background-color: #e31436
+                        background-color: #00c4c0
                     }*/
                 };
             }
@@ -137,12 +142,12 @@ export default {
                 background-color: transparent;
             };
             &&:hover {
-                color: #e31436;
+                color: #00c4c0;
                 outline: 0;
                 cursor: pointer;
                 text-decoration: none;
                 &&::before {
-                    background-color: #e31436
+                    background-color: #00c4c0
                 }
             };
         }

@@ -80,20 +80,6 @@
                 margin: 0 1px;
                 text-align: center;
             }
-            i {
-                display: inline-block;
-                width: 6px;
-                height: 6px;
-                border-bottom: 1px solid #e5e5e5;
-            }
-            .icon-left {
-                border-left: 1px solid #e5e5e5;
-                transform: rotateZ(45deg);
-            }
-            .icon-right {
-                border-right: 1px solid #e5e5e5;
-                transform: rotateZ(-45deg);
-            }
         }
         .placeholder {
             flex: 1;

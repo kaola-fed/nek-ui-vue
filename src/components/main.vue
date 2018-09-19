@@ -1,5 +1,5 @@
 <template>
-    <div :class="$style['kl-main']">
+    <div class="kl-main">
         <router-view></router-view>
         <footer-bar></footer-bar>
         <to-top></to-top>
@@ -16,7 +16,7 @@ export default {
 };
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style module>
+<style scoped>
 @component-namespace kl {
     @b main {
         min-width: 800px;
@@ -26,6 +26,7 @@ export default {
         left: 250px;
         top: 60px;
         padding: 15px;
+        padding-right: 90px;
         background-color: rgba(255,255,255,0.4);
         overflow: auto;
         @e footer {

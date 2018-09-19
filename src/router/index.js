@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import Router from 'vue-router';
+import guide from './guide';
 import components from './components';
 
 Vue.use(Router);
@@ -16,6 +17,7 @@ export default new Router({
                 main: resolve => require(['@/components/main'], resolve)
             },
             children: [
+                ...guide,
                 ...components
             ]
         },

@@ -1,22 +1,16 @@
 export default {
     itemTop: [
         {
-            title: '安装'
+            title: '安装',
+            titleEn: 'install'
         },
         {
-            title: '快速上手'
+            title: '国际化',
+            titleEn: 'international'
         },
         {
-            title: '国际化'
-        },
-        {
-            title: '定制主题'
-        },
-        {
-            title: '概览'
-        },
-        {
-            title: '更新日志'
+            title: '更新日志',
+            titleEn: 'update'
         }
     ],
     componentItem: [
@@ -26,6 +20,10 @@ export default {
                 {
                     title: '卡片',
                     titleEn: 'KLCard'
+                },
+                {
+                    title: '布局容器',
+                    titleEn: 'KLLayout'
                 },
                 {
                     title: '栅格布局',
@@ -49,44 +47,24 @@ export default {
                     titleEn: 'KLButton'
                 },
                 {
-                    title: '下拉选择',
-                    titleEn: 'KLSelect'
-                },
-                {
                     title: '输入框',
                     titleEn: 'KLInput'
-                },
-                {
-                    title: '表单',
-                    titleEn: 'KLForm'
                 },
                 {
                     title: '复选框',
                     titleEn: 'KLCheck'
                 },
                 {
-                    title: '复选组',
-                    titleEn: 'KLCheckGroup'
-                },
-                {
                     title: '日期选择',
                     titleEn: 'KLDatePicker'
                 },
                 {
-                    title: '多级选择',
-                    titleEn: 'KLMultiSelect'
+                    title: '下拉选择',
+                    titleEn: 'KLSelect'
                 },
                 {
-                    title: '单选组',
-                    titleEn: 'KLRadioGroup'
-                },
-                {
-                    title: '文本展示',
-                    titleEn: 'KLText'
-                },
-                {
-                    title: '文本输入',
-                    titleEn: 'KLTextArea'
+                    title: '表单',
+                    titleEn: 'KLForm'
                 },
                 {
                     title: '树型视图',
@@ -95,6 +73,22 @@ export default {
                 {
                     title: '上传文件',
                     titleEn: 'KLUpload'
+                },
+                {
+                    title: '单选',
+                    titleEn: 'KLRadio'
+                },
+                {
+                    title: '开关',
+                    titleEn: 'KLSwitch'
+                },
+                {
+                    title: '标签',
+                    titleEn: 'KLTag'
+                },
+                {
+                    title: '时间选择',
+                    titleEn: 'KLTime'
                 }
             ]
         },
@@ -135,10 +129,6 @@ export default {
                     titleEn: 'KLPager'
                 },
                 {
-                    title: '菜单栏',
-                    titleEn: 'KLSidebar'
-                },
-                {
                     title: '步骤',
                     titleEn: 'KLSteps'
                 },
@@ -160,16 +150,8 @@ export default {
                     titleEn: 'KLIcon'
                 },
                 {
-                    title: '图片预览',
-                    titleEn: 'KLImagePreview'
-                },
-                {
                     title: '加载',
                     titleEn: 'KLLoading'
-                },
-                {
-                    title: '国际化',
-                    titleEn: 'KLLocaleProvider'
                 },
                 {
                     title: '进度条',
