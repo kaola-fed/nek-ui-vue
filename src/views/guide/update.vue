@@ -4,10 +4,18 @@
         <div class="kl-content__form-demo">
             <el-card class="box-card">
                 <div slot="header" class="clearfix">
-                    <h2>3.0.18（最新）</h2>
+                    <h2>3.0.18</h2>
                 </div>
                 <div >
                     <p>最新版本更新到3.0.18, 修改<code>input-number</code>组件高度不统一问题。</p>
+                </div>
+            </el-card>
+            <el-card class="box-card">
+                <div slot="header" class="clearfix">
+                    <h2>3.0.19（最新）</h2>
+                </div>
+                <div >
+                    <p>删除导航栏分组的修改样式</p>
                 </div>
             </el-card>
         </div>
