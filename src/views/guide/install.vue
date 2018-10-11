@@ -8,6 +8,11 @@
             </code>
         </div>
         
+        <h2 class="kl-content__title">引用</h2>
+        <div class="kl-content__form-demo">
+            <p class="isntal-desc">在入口文件引用index.scss文件，原element的样式无需引用</p>
+            <code class="install-code">import 'element-kaola/index.scss';</code>
+        </div>
         <div class="kl-content-next">
             <span class="placeholder"></span>
             <router-link :to="{ name: 'international'}" class="kl-content-next__pager">

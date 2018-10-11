@@ -6,7 +6,7 @@
         </div>
         <div class="kl-header__right">
             <ul class="kl-header__nav">
-                <li><a href="https://element.faas.ele.me/2.4/#/zh-CN">demo页面</a></li>
+                <!-- <li><a href="https://element.faas.ele.me/2.4/#/zh-CN">demo页面</a></li> -->
                 <li><a href="https://element.faas.ele.me/2.4/#/zh-CN">element组件</a></li>
                 <!-- <li><router-link :to="{ name: 'docs'}">工具</router-link></li>
                 <li >
